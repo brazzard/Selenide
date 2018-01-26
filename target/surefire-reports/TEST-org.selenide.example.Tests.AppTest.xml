@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="org.selenide.example.Tests.AppTest" time="28.84" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.selenide.example.Tests.AppTest" time="29.759" tests="3" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib"/>
@@ -23,8 +23,7 @@
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
     <property name="java.io.tmpdir" value="/var/folders/fx/ww6djqjx6gl6x_zb15mcx4n80000gn/T/"/>
-    <property name="line.separator" value="
-"/>
+    <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
     <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.5.2/libexec/bin/m2.conf"/>
@@ -62,7 +61,42 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="org.selenide.example.Tests.AppTest" name="testApp" time="0.004"/>
-  <testcase classname="org.selenide.example.Tests.AppTest" name="testFirstLink" time="15.115"/>
-  <testcase classname="org.selenide.example.Tests.AppTest" name="testSearchResult" time="13.721"/>
+  <testcase name="testApp" classname="org.selenide.example.Tests.AppTest" time="0.117"/>
+  <testcase name="testFirstLink" classname="org.selenide.example.Tests.AppTest" time="15.354"/>
+  <testcase name="testSearchResult" classname="org.selenide.example.Tests.AppTest" time="13.982">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.selenide.example.Tests.AppTest.testSearchResult(AppTest.java:45)
+</failure>
+    <system-err><![CDATA[1516897756793	Marionette	DEBUG	Received DOM event "beforeunload" for "https://en.wikipedia.org/wiki/Automation"
+1516897756957	Marionette	DEBUG	Received DOM event "pagehide" for "https://en.wikipedia.org/wiki/Automation"
+1516897756958	Marionette	DEBUG	Received DOM event "unload" for "https://en.wikipedia.org/wiki/Automation"
+1516897757183	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.google.com.ua/?gfe_rd=cr&dcr=0&ei=3AVqWvCMM5OlX_nLmtAM"
+1516897757618	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.google.com.ua/?gfe_rd=cr&dcr=0&ei=3AVqWvCMM5OlX_nLmtAM"
+1516897761487	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.google.com.ua/search?dcr=0&source=hp&ei=3AVqWua1NYyksgHLzaLYDg&q=automation&oq=automation&gs_l=psy-ab.3..0l10.519.543.0.965.10.2.0.0.0.0.347.471.0j1j0j1.2.0....0...1c.1.64.psy-ab..8.2.464...0i131k1.0.AEUUIGvAriw"
+1516897761617	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.google.com.ua/search?dcr=0&source=hp&ei=3AVqWua1NYyksgHLzaLYDg&q=automation&oq=automation&gs_l=psy-ab.3..0l10.519.543.0.965.10.2.0.0.0.0.347.471.0j1j0j1.2.0....0...1c.1.64.psy-ab..8.2.464...0i131k1.0.AEUUIGvAriw"
+1516897761618	Marionette	DEBUG	Received DOM event "unload" for "https://www.google.com.ua/search?dcr=0&source=hp&ei=3AVqWua1NYyksgHLzaLYDg&q=automation&oq=automation&gs_l=psy-ab.3..0l10.519.543.0.965.10.2.0.0.0.0.347.471.0j1j0j1.2.0....0...1c.1.64.psy-ab..8.2.464...0i131k1.0.AEUUIGvAriw"
+1516897762272	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=3gVqWsaGGIWusQGZm4_IAg&start=10&sa=N&biw=1680&bih=883"
+1516897763615	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=3gVqWsaGGIWusQGZm4_IAg&start=10&sa=N&biw=1680&bih=883"
+1516897764148	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=3gVqWsaGGIWusQGZm4_IAg&start=10&sa=N&biw=1680&bih=883"
+1516897764271	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=3gVqWsaGGIWusQGZm4_IAg&start=10&sa=N&biw=1680&bih=883"
+1516897764280	Marionette	DEBUG	Received DOM event "unload" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=3gVqWsaGGIWusQGZm4_IAg&start=10&sa=N&biw=1680&bih=883"
+1516897764903	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=4QVqWtqUIISTmgWNiozoBA&start=20&sa=N&biw=1680&bih=883"
+1516897765276	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=4QVqWtqUIISTmgWNiozoBA&start=20&sa=N&biw=1680&bih=883"
+1516897765736	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=4QVqWtqUIISTmgWNiozoBA&start=20&sa=N&biw=1680&bih=883"
+1516897765880	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=4QVqWtqUIISTmgWNiozoBA&start=20&sa=N&biw=1680&bih=883"
+1516897765885	Marionette	DEBUG	Received DOM event "unload" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=4QVqWtqUIISTmgWNiozoBA&start=20&sa=N&biw=1680&bih=883"
+1516897766371	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=5AVqWoOnC8GrsAHjwaXABg&start=30&sa=N&biw=1680&bih=883"
+1516897766787	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=5AVqWoOnC8GrsAHjwaXABg&start=30&sa=N&biw=1680&bih=883"
+1516897767236	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=5AVqWoOnC8GrsAHjwaXABg&start=30&sa=N&biw=1680&bih=883"
+1516897767502	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=5AVqWoOnC8GrsAHjwaXABg&start=30&sa=N&biw=1680&bih=883"
+1516897767503	Marionette	DEBUG	Received DOM event "unload" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=5AVqWoOnC8GrsAHjwaXABg&start=30&sa=N&biw=1680&bih=883"
+1516897768122	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=5QVqWsafL8i2sQGQ8yE&start=40&sa=N&biw=1680&bih=883"
+1516897768457	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=5QVqWsafL8i2sQGQ8yE&start=40&sa=N&biw=1680&bih=883"
+1516897769133	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=5QVqWsafL8i2sQGQ8yE&start=40&sa=N&biw=1680&bih=883"
+1516897769278	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=5QVqWsafL8i2sQGQ8yE&start=40&sa=N&biw=1680&bih=883"
+1516897769284	Marionette	DEBUG	Received DOM event "unload" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=5QVqWsafL8i2sQGQ8yE&start=40&sa=N&biw=1680&bih=883"
+1516897769826	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=5wVqWqXOEMylsgHmiJCYCw&start=50&sa=N&biw=1680&bih=883"
+1516897770657	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.google.com.ua/search?q=automation&dcr=0&ei=5wVqWqXOEMylsgHmiJCYCw&start=50&sa=N&biw=1680&bih=883"
+]]></system-err>
+  </testcase>
 </testsuite>

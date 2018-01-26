@@ -22,7 +22,7 @@ public class AppTest
 {
     String keyword = "automation";
     String baseUrl = "https://google.com";
-    String expectedUrl = "https://en.wikipedia.org/wiki/Automation";
+    String expectedUrl = "https://testautomationday.com”)";
 
     @org.junit.Test
     public void testFirstLink() {

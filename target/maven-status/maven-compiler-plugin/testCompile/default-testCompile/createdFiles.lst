@@ -1,0 +1,4 @@
+org/selenide/example/Tests/AppTest.class
+org/selenide/example/Pages/SearchResultPage.class
+org/selenide/example/Pages/HomePage.class
+org/selenide/example/Pages/OpenedPage.class
