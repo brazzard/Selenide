@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Selenide-stage') {
       steps {
-        build 'Check'
+        catchError()
       }
     }
   }
