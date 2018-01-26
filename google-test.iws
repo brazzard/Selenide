@@ -2,24 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57b40900-b38e-4da2-9da6-064379e3320f" name="Default" comment="init commit">
-      <change beforePath="" afterPath="$PROJECT_DIR$/allure-results/581ddef0-9220-4bd7-9cba-4e6b848320d2-result.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/allure-results/62c79822-1edd-40b9-9661-f13f0d055b46-result.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/allure-results/638ea058-221a-46bc-aada-2f878f944bdc-result.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/allure-results/711c3cc9-75ff-4e09-a5c5-823ebcb759a2-result.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/allure-results/c2c7a5bd-00e6-4231-a773-21e067cee5b6-result.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/allure-results/e1164a9f-33f6-47db-888c-0237654740c0-result.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/2018-01-25T18-24-32_625.dumpstream" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/2018-01-25T18-28-58_915.dumpstream" />
-      <change beforePath="$PROJECT_DIR$/google-test.iws" afterPath="$PROJECT_DIR$/google-test.iws" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenide/example/Tests/AppTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/selenide/example/Tests/AppTest.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/selenide/example/App.class" afterPath="$PROJECT_DIR$/target/classes/org/selenide/example/App.class" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.selenide.example.AppTest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.selenide.example.Tests.AppTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.selenide.example.Tests.AppTest.xml" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.selenide.example.AppTest.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.selenide.example.Tests.AppTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/org.selenide.example.Tests.AppTest.txt" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/selenide/example/Tests/AppTest.class" afterPath="$PROJECT_DIR$/target/test-classes/org/selenide/example/Tests/AppTest.class" />
+      <change beforePath="$PROJECT_DIR$/allure-results/581ddef0-9220-4bd7-9cba-4e6b848320d2-result.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/allure-results/62c79822-1edd-40b9-9661-f13f0d055b46-result.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/allure-results/638ea058-221a-46bc-aada-2f878f944bdc-result.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/allure-results/711c3cc9-75ff-4e09-a5c5-823ebcb759a2-result.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/allure-results/c2c7a5bd-00e6-4231-a773-21e067cee5b6-result.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e1164a9f-33f6-47db-888c-0237654740c0-result.json" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -948,7 +936,7 @@
       <workItem from="1516893316210" duration="97000" />
       <workItem from="1516894104895" duration="22000" />
       <workItem from="1516894905192" duration="3094000" />
-      <workItem from="1516961657783" duration="579000" />
+      <workItem from="1516961657783" duration="983000" />
     </task>
     <servers />
   </component>
@@ -985,7 +973,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37129000" />
+    <option name="totallyTimeSpent" value="37533000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
