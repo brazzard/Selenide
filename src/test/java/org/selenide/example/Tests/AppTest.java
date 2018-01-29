@@ -1,13 +1,13 @@
 package org.selenide.example.Tests;
 
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.junit.Assert;
+import org.junit.*;
 import org.selenide.example.Pages.HomePage;
 import org.selenide.example.Pages.OpenedPage;
 import org.selenide.example.Pages.SearchResultPage;
-
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,14 +22,15 @@ public class AppTest
 {
     String keyword = "automation";
     String baseUrl = "https://google.com";
-    String expectedUrl = "https://testautomationday.com”)";
+    String expectedUrl = "https://en.wikipedia.org/wiki/Automation";
 
     @org.junit.Test
+//  "Open first link and check that searched keyword on the page title"
     public void testFirstLink() {
         HomePage homePage = open(baseUrl, HomePage.class);
         SearchResultPage searchResultPage = homePage.search(keyword);
         OpenedPage openedPage = searchResultPage.firstPage();
-        Assert.assertTrue(openedPage.getTitle().toLowerCase().contains(keyword));
+        Assert.assertTrue("First link doesn't contain searched word", openedPage.getTitle().toLowerCase().contains(keyword));
     }
 
     @org.junit.Test
@@ -42,7 +43,8 @@ public class AppTest
             listOfLinks.addAll(searchResultPage.searchLinks());
             searchResultPage.NextPage();
         }
-        Assert.assertTrue(listOfLinks.contains(expectedUrl));
+        System.out.print(listOfLinks);
+        Assert.assertTrue("Expected link "+expectedUrl+" not found", listOfLinks.contains(expectedUrl));
 
     }
 
