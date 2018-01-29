@@ -1,9 +1,7 @@
 package org.selenide.example.Tests;
 
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+
 import org.junit.*;
 import org.selenide.example.Pages.HomePage;
 import org.selenide.example.Pages.OpenedPage;
@@ -17,14 +15,12 @@ import static com.codeborne.selenide.Selenide.*;
 /**
  * Unit test for simple App.
  */
-public class AppTest
-    extends TestCase
-{
+public class AppTest {
     String keyword = "automation";
     String baseUrl = "https://google.com";
     String expectedUrl = "https://en.wikipedia.org/wiki/Automation";
 
-    @org.junit.Test
+    @Test
 //  "Open first link and check that searched keyword on the page title"
     public void testFirstLink() {
         HomePage homePage = open(baseUrl, HomePage.class);
@@ -33,7 +29,7 @@ public class AppTest
         Assert.assertTrue("First link doesn't contain searched word", openedPage.getTitle().toLowerCase().contains(keyword));
     }
 
-    @org.junit.Test
+    @Test
     public void testSearchResult() {
         List<String> listOfLinks = new ArrayList<String>();
         int numberOfPages = 5;
@@ -48,23 +44,4 @@ public class AppTest
 
     }
 
-
-
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp() { assertTrue( true ); }
 }
