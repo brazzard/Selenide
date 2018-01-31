@@ -1,7 +1,8 @@
 package org.selenide.example.Tests;
 
-
-
+import io.qameta.allure.Description;
+import io.qameta.allure.Stories;
+import io.qameta.allure.Story;
 import org.junit.*;
 import org.selenide.example.Pages.HomePage;
 import org.selenide.example.Pages.OpenedPage;
@@ -9,7 +10,6 @@ import org.selenide.example.Pages.SearchResultPage;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import static com.codeborne.selenide.Selenide.*;
 
 /**
@@ -18,10 +18,10 @@ import static com.codeborne.selenide.Selenide.*;
 public class AppTest {
     String keyword = "automation";
     String baseUrl = "https://google.com";
-    String expectedUrl = "https://en.wikipedia.org/wiki/Automation";
+    String expectedUrl = "https://testautomationday.com";
 
     @Test
-//  "Open first link and check that searched keyword on the page title"
+    @Story("Search page")
     public void testFirstLink() {
         HomePage homePage = open(baseUrl, HomePage.class);
         SearchResultPage searchResultPage = homePage.search(keyword);
@@ -30,6 +30,7 @@ public class AppTest {
     }
 
     @Test
+    @Story("Search results page")
     public void testSearchResult() {
         List<String> listOfLinks = new ArrayList<String>();
         int numberOfPages = 5;
@@ -39,7 +40,6 @@ public class AppTest {
             listOfLinks.addAll(searchResultPage.searchLinks());
             searchResultPage.NextPage();
         }
-        System.out.print(listOfLinks);
         Assert.assertTrue("Expected link "+expectedUrl+" not found", listOfLinks.contains(expectedUrl));
 
     }
