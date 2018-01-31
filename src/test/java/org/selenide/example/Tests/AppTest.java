@@ -1,8 +1,6 @@
 package org.selenide.example.Tests;
 
-import io.qameta.allure.Description;
-import io.qameta.allure.Stories;
-import io.qameta.allure.Story;
+import io.qameta.allure.*;
 import org.junit.*;
 import org.selenide.example.Pages.HomePage;
 import org.selenide.example.Pages.OpenedPage;
@@ -15,13 +13,16 @@ import static com.codeborne.selenide.Selenide.*;
 /**
  * Unit test for simple App.
  */
+
 public class AppTest {
     String keyword = "automation";
     String baseUrl = "https://google.com";
     String expectedUrl = "https://testautomationday.com";
 
+
     @Test
-    @Story("Search page")
+    @Story("Search results page")
+    @Severity(SeverityLevel.CRITICAL)
     public void testFirstLink() {
         HomePage homePage = open(baseUrl, HomePage.class);
         SearchResultPage searchResultPage = homePage.search(keyword);
@@ -31,6 +32,7 @@ public class AppTest {
 
     @Test
     @Story("Search results page")
+    @Severity(SeverityLevel.MINOR)
     public void testSearchResult() {
         List<String> listOfLinks = new ArrayList<String>();
         int numberOfPages = 5;

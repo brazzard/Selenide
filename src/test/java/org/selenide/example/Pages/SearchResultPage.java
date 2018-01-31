@@ -2,6 +2,7 @@ package org.selenide.example.Pages;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.SelenideElement;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +27,8 @@ public class SearchResultPage {
     }
 
     public SearchResultPage NextPage() {
-        $("div.mw a#pnnext").click();
+        SelenideElement nextpage = $("div.mw a#pnnext").waitUntil(Condition.visible, 10000);
+        nextpage.click();
         return page(SearchResultPage.class);
     }
 
