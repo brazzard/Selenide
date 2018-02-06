@@ -1,4 +1,7 @@
+org/selenide/example/Proxy/BmpFirefox.class
 org/selenide/example/Tests/AppTest.class
 org/selenide/example/Pages/SearchResultPage.class
 org/selenide/example/Pages/HomePage.class
+org/selenide/example/Proxy/MockServerTest.class
 org/selenide/example/Pages/OpenedPage.class
+org/selenide/example/Proxy/Bmp.class

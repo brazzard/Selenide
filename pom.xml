@@ -15,8 +15,18 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-
   <dependencies>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>24.0-jre</version>
+    </dependency>
+    <dependency>
+      <groupId>org.mock-server</groupId>
+      <artifactId>mockserver-netty</artifactId>
+      <version>3.10.4</version>
+      <scope>test</scope>
+    </dependency>
     <dependency>
       <groupId>io.qameta.allure</groupId>
       <artifactId>allure-junit4</artifactId>
@@ -39,6 +49,12 @@
         <groupId>ru.yandex.qatools.allure</groupId>
         <artifactId>allure-junit-adaptor</artifactId>
         <version>1.5.4</version>
+      </dependency>
+      <dependency>
+        <groupId>net.lightbody.bmp</groupId>
+        <artifactId>browsermob-core</artifactId>
+        <version>2.1.5</version>
+        <scope>test</scope>
       </dependency>
   </dependencies>
 
